@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../CSScode/style.css"> <!-- Link to CSS  -->
+    <script src="../JAVASCRIPTcode/login.js" defer></script>
+    <script src="../JAVASCRIPTcode/logout.js" defer></script> <!-- Link to JavaScript -->
+</head>
+
+<body class="registeration login"> <!-- Main body  -->
+    <nav>
+        <div class="navbar"> <!-- Navigation bar -->
+            <div class="logo">INFURIOUS</div> <!-- Logo  -->
+            <div class="menu">
+                <a href="/index.html">Home</a>
+                <a href="leaderboard.html">Leaderboard</a>
+                <a id="loginLink" href="login.html">Login/Register</a>
+                <a href="game.html">Play Game</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="wrapper"> <!-- Container for the login form -->
+        <form id="loginForm" onsubmit="login(); return false;" autocomplete="on">
+            <h1>Login</h1>
+            <div class="input-box">
+                <label for="usernameInput">Username</label>
+                <input type="text" id="usernameInput" placeholder="Enter username" required>
+            </div>
+            <div class="input-box">
+                <label for="passwordInput">Password</label>
+                <input type="password" id="passwordInput" placeholder="Enter password" required>
+            </div>
+
+            <div class="remember-forgot">
+                <label><input type="checkbox"> Remember me</label>
+                <a href="">Forgot password? </a>
+            </div>
+
+            <button type="submit" class="btn">Login</button> <!-- Submit button for the form -->
+            <div id="loginFailure" style="color: red;"></div>
+            <div class="register-link"> <!-- Link to the registration page -->
+                <p>Don't have an account? <a href="register.html">Register</a></p>
+            </div>
+        </form>
+    </div>
+    <footer>
+        <div class="footer-content"> <!-- Footer container -->
+            <p>2024 INFURIOUS. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="/index.html">Home</a>
+                <a href="">Privacy Policy</a>
+                <a href="">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

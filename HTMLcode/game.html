@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>INFURIOUS</title> <!-- Page title -->
+    <link rel="stylesheet" href="../CSScode/style.css"> <!-- Link to CSS  -->
+    <script type="module" src="../JAVASCRIPTcode/main.js" defer></script> <!-- Link to Javascript  -->
+    <script src="../JAVASCRIPTcode/logout.js" defer></script> <!-- Link to JavaScript -->
+</head>
+<body class="game-body">
+   <nav>
+        <div class="navbar"> <!-- Navigation bar -->
+            <div class="logo">INFURIOUS</div> <!-- Logo -->
+            <div class="menu"> <!-- Navigation links -->
+                <a href="/index.html">Home</a>
+                <a href="leaderboard.html">Leaderboard</a>
+                <a id="loginLink"href="login.html">Login/Register</a>
+                <a  href="game.html">Play Game</a>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="background"> <!-- Background image -->
+        <img src="/Images/red.png" class="bird" alt="Bird">
+    </div>
+
+    <div class="message"> 
+        <p>Spacebar to Start and Control</p>
+    </div>
+
+    <div class="score"> <!-- Score display -->
+        <span class="score_title">Score: </span>
+        <span class="score_val">0</span>
+    </div>
+
+    <div class="game-container"> <!-- Game area -->
+    </div>
+
+    <div class="game-over" style="display:none;"> <!-- Game over message -->
+        <h2>Game Over!</h2>
+        <p>Your Final Score: <span class="final-score">0</span></p>
+        <button class="restart-btn">Restart</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Game Over</title> <!-- Page title -->
+    <link rel="stylesheet" href="../CSScode/style.css"> <!-- Link to CSS  -->
+    <script src="../JAVASCRIPTcode/gameover.js" defer></script> <!-- Link to Javascript  -->
+</head>
+<body>
+    <nav>
+        <div class="navbar"> <!-- Navigation bar -->
+            <div class="logo">INFURIOUS</div> <!-- Logo -->
+            <div class="menu"> <!-- Navigation links -->
+                <a href="/index.html">Home</a>
+                <a href="leaderboard.html">Leaderboard</a>
+                <a id="loginLink" href="login.html">Login/Register</a>
+                <a href="game.html">Play Game</a>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="gameover"> <!-- Game over message -->
+        <div class="message">
+            <h1>GAME OVER</h1>
+            <p>Your final score: <span id="finalScore"></span></p>
+            <p>Redirecting to Leaderboard in <span id="timer">5</span> seconds...</p>
+            <p>Play again: <a href="game.html">Yes</a> <a href="leaderboard.html">No</a></p>
+        </div>
+        <div class="bottom-message">
+            <p>Press Enter to start again</p>
+        </div>
+    </div>
+</body>
+</html>

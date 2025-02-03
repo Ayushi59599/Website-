@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Register</title> 
+    <link rel="stylesheet" href="../CSScode/style.css"> <!-- Link to CSS -->
+    <script src="../JAVASCRIPTcode/registration.js" defer></script> <!-- Link to JavaScript -->
+</head>
+
+<body class="registeration"> <!-- Main body  -->
+    <nav>
+        <div class="navbar"> <!-- Navigation bar  -->
+            <div class="logo">INFURIOUS</div> <!-- Logo  -->
+            <div class="menu"> 
+                <a href="/index.html">Home</a>
+                <a href="leaderboard.html">Leaderboard</a>
+                <a id="loginLink" href="login.html">Login/Register</a>
+                <a href="game.html">Play Game</a>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="wrapper"> <!-- Container for the registration form -->
+        <form onsubmit="register(); return false;"> 
+            <h1>Register</h1> 
+            <div class="input-box">
+                <label for="name">Name</label>
+                <input type="text" id="nameInput" placeholder="Your Name" required> 
+            </div>
+
+            <div class="input-box">
+                <label for="usernameInput">Username</label>
+                <input type="text" id="usernameInput" placeholder="Username" required> 
+            </div>
+
+            <div class="input-box">
+                <label for="emailInput">Email</label>
+                <input type="email" id="emailInput" placeholder="Your Email" required> 
+            </div>
+
+            <div class="input-box"> 
+                <label for="countryInput">Country</label>
+                <input type="text" id="countryInput" placeholder="Your Country" required> 
+            </div>
+
+            <div class="input-box">
+                <label for="passwordInput">Password</label>
+                <input type="password" id="passwordInput" placeholder="Password" required> 
+            </div>
+
+            <button type="submit" class="btn">Register</button> 
+
+            <div class="register-link">
+                <p>Already have an account? <a href="login.html">Login</a></p> 
+            </div>
+        </form>
+    </div>
+    <footer>
+        <div class="footer-content"> <!-- Footer container -->
+            <p>&copy; 2024 INFURIOUS. All rights reserved.</p> 
+            <div class="footer-links"> 
+                <a href="/index.html">Home</a>
+                <a href="">Privacy Policy</a>
+                <a href="">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
